@@ -39,30 +39,29 @@
 		<ul class="sidebar-nav">
 			<a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
 			<li class="sidebar-brand">
-				<a href="#top" onclick=$( "#menu-close").click();>Start Bootstrap</a>
+				<a href="#top" onclick=$("#menu-close").click();>Start Bootstrap</a>
 			</li>
 			<li>
-				<a href="#top" onmouseover=$( "#menu-close").click();>Home</a>
+				<a href="#top" onmouseover=$("#menu-close").click();>Home</a>
 			</li>
 			<li>
-				<a href="#about" onclick=$( "#menu-close").click();>Products</a>
+				<a href="#about" onclick=$("#menu-close").click();>Products</a>
 			</li>
 			<li>
-				<a href="#callout" onclick=$( "#menu-close").click();>About</a>
+				<a href="#callout" onclick=$("#menu-close").click();>About</a>
 			</li>
 			<li>
-				<a href="#portfolio" onclick=$( "#menu-close").click();>Login</a>
+				<a href="#portfolio" onclick=$("#menu-close").click();>Login</a>
 			</li>
 			<li>
-				<a href="#contact" onclick=$( "#menu-close").click();>Registration</a>
+				<a href="#contact" onclick=$("#menu-close").click();>Registration</a>
 			</li>
 		</ul>
 	</nav>
 
 	<!-- Header -->
 	<header id="top" class="header">
-		<div class="text-vertical-center">
-
+		<div class="text-vertical-center" id="animate-text">
 			<h1>Acoustic life</h1>
 			<h3>The way to tuch the music.</h3>
 			<br>
@@ -74,7 +73,7 @@
 	<section id="about" class="about">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12 text-center">
+				<div id="toggle-products" class="col-lg-12 text-center">
 					<h2>Products</h2>
 					<p class="lead">Touch to add in to your life.</p>
 				</div>
@@ -87,7 +86,18 @@
 	<!-- Services -->
 	<!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
 	<section id="services" class="services bg-primary">
-		<div class="container">
+		<!--Start Overlay-->
+		<div class="row">
+			<div id="overlay">
+				<i id="close-overlay" class="fa fa-times fa-4x"></i>
+				<div id="overlay-content">
+				</div>
+			</div>
+		</div>
+		<!--Start overlay content-->
+
+		<!--Normal content-->
+		<div class=" container" id="container-item">
 			<div class="row text-center">
 				<div id="background-products" class="col-lg-10">
 					<div class="btn-group btn-group-justified" role="group" aria-label="...">
@@ -132,168 +142,30 @@
 									</div>
 									<div class="name-item">
 										<h4>
-                                    <strong>Service Name</strong>
+                                    <strong>Guitar</strong>
                                 </h4>
 									</div>
 									<div class="descripion-item">
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 									</div>
 									<div class="price-item">
-										<a href="#" class="btn btn-light">Learn More</a>
+										<a href="#price-item" id="view-item" class="btn btn-light">Learn More</a>
 									</div>
 								</div>
 							</div>
 							<div class="col-md-3 col-sm-6">
-								<div class="service-item">
-									<div class="image-item">
+								<div class="service-item"><div class="image-item">
 									</div>
 									<div class="name-item">
 										<h4>
-                                    <strong>Service Name</strong>
+                                    <strong>Guitar</strong>
                                 </h4>
 									</div>
 									<div class="descripion-item">
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 									</div>
 									<div class="price-item">
-										<a href="#" class="btn btn-light">Learn More</a>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-md-3 col-sm-6">
-								<div class="service-item">
-									<div class="image-item">
-									</div>
-									<div class="name-item">
-										<h4>
-                                    <strong>Service Name</strong>
-                                </h4>
-									</div>
-									<div class="descripion-item">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-									</div>
-									<div class="price-item">
-										<a href="#" class="btn btn-light">Learn More</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<div class="service-item">
-									<div class="image-item">
-									</div>
-									<div class="name-item">
-										<h4>
-                                    <strong>Service Name</strong>
-                                </h4>
-									</div>
-									<div class="descripion-item">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-									</div>
-									<div class="price-item">
-										<a href="#" class="btn btn-light">Learn More</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<div class="service-item">
-									<div class="image-item">
-									</div>
-									<div class="name-item">
-										<h4>
-                                    <strong>Service Name</strong>
-                                </h4>
-									</div>
-									<div class="descripion-item">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-									</div>
-									<div class="price-item">
-										<a href="#" class="btn btn-light">Learn More</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<div class="service-item">
-									<div class="image-item">
-									</div>
-									<div class="name-item">
-										<h4>
-                                    <strong>Service Name</strong>
-                                </h4>
-									</div>
-									<div class="descripion-item">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-									</div>
-									<div class="price-item">
-										<a href="#" class="btn btn-light">Learn More</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<div class="service-item">
-									<div class="image-item">
-									</div>
-									<div class="name-item">
-										<h4>
-                                    <strong>Service Name</strong>
-                                </h4>
-									</div>
-									<div class="descripion-item">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-									</div>
-									<div class="price-item">
-										<a href="#" class="btn btn-light">Learn More</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<div class="service-item">
-									<div class="image-item">
-									</div>
-									<div class="name-item">
-										<h4>
-                                    <strong>Service Name</strong>
-                                </h4>
-									</div>
-									<div class="descripion-item">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-									</div>
-									<div class="price-item">
-										<a href="#" class="btn btn-light">Learn More</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<div class="service-item">
-									<div class="image-item">
-									</div>
-									<div class="name-item">
-										<h4>
-                                    <strong>Service Name</strong>
-                                </h4>
-									</div>
-									<div class="descripion-item">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-									</div>
-									<div class="price-item">
-										<a href="#" class="btn btn-light">Learn More</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<div class="service-item">
-									<div class="image-item">
-									</div>
-									<div class="name-item">
-										<h4>
-                                    <strong>Service Name</strong>
-                                </h4>
-									</div>
-									<div class="descripion-item">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-									</div>
-									<div class="price-item">
-										<a href="#" class="btn btn-light">Learn More</a>
+										<a href="#price-item" class="btn btn-light">Learn More</a>
 									</div>
 								</div>
 							</div>
@@ -304,14 +176,14 @@
 									</div>
 									<div class="name-item">
 										<h4>
-                                    <strong>Service Name</strong>
+                                    <strong>Guitar</strong>
                                 </h4>
 									</div>
 									<div class="descripion-item">
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 									</div>
 									<div class="price-item">
-										<a href="#" class="btn btn-light">Learn More</a>
+										<a href="#price-item" class="btn btn-light">Learn More</a>
 									</div>
 								</div>
 							</div>
@@ -321,14 +193,14 @@
 									</div>
 									<div class="name-item">
 										<h4>
-                                    <strong>Service Name</strong>
+                                    <strong>Guitar</strong>
                                 </h4>
 									</div>
 									<div class="descripion-item">
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 									</div>
 									<div class="price-item">
-										<a href="#" class="btn btn-light">Learn More</a>
+										<a href="#price-item" class="btn btn-light">Learn More</a>
 									</div>
 								</div>
 							</div>
@@ -338,14 +210,14 @@
 									</div>
 									<div class="name-item">
 										<h4>
-                                    <strong>Service Name</strong>
+                                    <strong>Guitar</strong>
                                 </h4>
 									</div>
 									<div class="descripion-item">
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 									</div>
 									<div class="price-item">
-										<a href="#" class="btn btn-light">Learn More</a>
+										<a href="#price-item" class="btn btn-light">Learn More</a>
 									</div>
 								</div>
 							</div>
@@ -355,14 +227,14 @@
 									</div>
 									<div class="name-item">
 										<h4>
-                                    <strong>Service Name</strong>
+                                    <strong>Guitar</strong>
                                 </h4>
 									</div>
 									<div class="descripion-item">
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 									</div>
 									<div class="price-item">
-										<a href="#" class="btn btn-light">Learn More</a>
+										<a href="#price-item" class="btn btn-light">Learn More</a>
 									</div>
 								</div>
 							</div>
@@ -372,14 +244,14 @@
 									</div>
 									<div class="name-item">
 										<h4>
-                                    <strong>Service Name</strong>
+                                    <strong>Guitar</strong>
                                 </h4>
 									</div>
 									<div class="descripion-item">
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 									</div>
 									<div class="price-item">
-										<a href="#" class="btn btn-light">Learn More</a>
+										<a href="#price-item" class="btn btn-light">Learn More</a>
 									</div>
 								</div>
 							</div>
@@ -389,14 +261,151 @@
 									</div>
 									<div class="name-item">
 										<h4>
-                                    <strong>Service Name</strong>
+                                    <strong>Guitar</strong>
                                 </h4>
 									</div>
 									<div class="descripion-item">
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 									</div>
 									<div class="price-item">
-										<a href="#" class="btn btn-light">Learn More</a>
+										<a href="#price-item" class="btn btn-light">Learn More</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="service-item">
+									<div class="image-item">
+									</div>
+									<div class="name-item">
+										<h4>
+                                    <strong>Guitar</strong>
+                                </h4>
+									</div>
+									<div class="descripion-item">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									</div>
+									<div class="price-item">
+										<a href="#price-item" class="btn btn-light">Learn More</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="service-item">
+									<div class="image-item">
+									</div>
+									<div class="name-item">
+										<h4>
+                                    <strong>Guitar</strong>
+                                </h4>
+									</div>
+									<div class="descripion-item">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									</div>
+									<div class="price-item">
+										<a href="#price-item" class="btn btn-light">Learn More</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3 col-sm-6">
+								<div class="service-item">
+									<div class="image-item">
+									</div>
+									<div class="name-item">
+										<h4>
+                                    <strong>Guitar</strong>
+                                </h4>
+									</div>
+									<div class="descripion-item">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									</div>
+									<div class="price-item">
+										<a href="#price-item" class="btn btn-light">Learn More</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="service-item">
+									<div class="image-item">
+									</div>
+									<div class="name-item">
+										<h4>
+                                    <strong>Guitar</strong>
+                                </h4>
+									</div>
+									<div class="descripion-item">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									</div>
+									<div class="price-item">
+										<a href="#price-item" class="btn btn-light">Learn More</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="service-item">
+									<div class="image-item">
+									</div>
+									<div class="name-item">
+										<h4>
+                                    <strong>Guitar</strong>
+                                </h4>
+									</div>
+									<div class="descripion-item">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									</div>
+									<div class="price-item">
+										<a href="#price-item" class="btn btn-light">Learn More</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="service-item">
+									<div class="image-item">
+									</div>
+									<div class="name-item">
+										<h4>
+                                    <strong>Guitar</strong>
+                                </h4>
+									</div>
+									<div class="descripion-item">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									</div>
+									<div class="price-item">
+										<a href="#price-item" class="btn btn-light">Learn More</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="service-item">
+									<div class="image-item">
+									</div>
+									<div class="name-item">
+										<h4>
+                                    <strong>Guitar</strong>
+                                </h4>
+									</div>
+									<div class="descripion-item">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									</div>
+									<div class="price-item">
+										<a href="#price-item" class="btn btn-light">Learn More</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="service-item">
+									<div class="image-item">
+									</div>
+									<div class="name-item">
+										<h4>
+                                    <strong>Guitar</strong>
+                                </h4>
+									</div>
+									<div class="descripion-item">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									</div>
+									<div class="price-item">
+										<a href="#price-item" class="btn btn-light">Learn More</a>
 									</div>
 								</div>
 							</div>
@@ -412,7 +421,13 @@
 		<!-- /.row -->
 		</div>
 		<!-- /.container -->
+
 	</section>
+	<div id="show-more">
+		<i class="fa fa-angle-double-down fa-2x"></i>
+
+	</div>
+
 
 	<!-- Callout -->
 	<section class="callout" id="callout">
@@ -579,6 +594,8 @@
 			});
 		});
 	</script>
+	<!--Show More-->
+	<script src="js/scriptMy.js"></script>
 
 </body>
 
