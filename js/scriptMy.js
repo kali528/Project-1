@@ -1,5 +1,7 @@
 (function () {
 	'use strict';
+	//Auto hide mine menu
+
 	//Animate main page
 	$(document).ready(function () {
 		var div = $('#animate-text>h1');
@@ -39,7 +41,7 @@
 
 	//Overlay
 	$(document).ready(function () {
-		$("#view-item").click(function () {
+		$(".price-item").click(function () {
 			overlay.style.display = "block";
 			overlayBox.style.display = "block";
 			btnMenu.style.display = "none";
@@ -48,7 +50,22 @@
 		$("#close-overlay").click(function () {
 			overlay.style.display = "none";
 			overlayBox.style.display = "none";
-			btnMenu.style.display = "inline-block"
+			btnMenu.style.display = "inline-block";
+		});
+
+	})
+
+	$(document).ready(function () {
+		$("#overlay-creator").hide();
+		$("#overlayproduct-tab").click(function () {
+			$("#overlaycreator-tab").removeClass('active');
+			$("#overlay-product").show();
+			$("#overlay-creator").hide();
+		});
+		$("#overlaycreator-tab").click(function () {
+			$("#overlayproduct-tab").removeClass('active');
+			$("#overlay-product").hide();
+			$("#overlay-creator").show();
 		});
 
 	})
